@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login-form.css">
+    <link rel="stylesheet" href="css/todo-list.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/question.css">
+    <link rel="stylesheet" href="css/drag.css">
+    <link rel="stylesheet" href="css/answers.css">
+</head>
+<body>
+    <main>
+        <div id="login-form-wrapper" class="hidden">
+            <form id="login-form">
+                <input required maxlength="15" type="text" placeholder="Write your name">
+                <input type="submit" value="Log In"></input>
+            </form>
+        </div>
+        <div id="after-login" class="hidden ">
+            <div id="question-form-wrapper" class="hidden drag">
+                <div id="check-submit"  class="hidden">
+                    <p>Should you save it?</p>
+                    <button id="yes-btn">yes</button>
+                    <button id="no-btn">no</button>
+                </div> 
+                <form id="question-form">
+                    <label for="question"></label>
+                    <textarea required minlength="1" id="question" type="text" autocomplete="off"></textarea>
+                </form>
+            </div>
+            <div id="todo-wrapper"  class="drag">
+                <form id="todo-form">
+                    <input required type="text" placeholder="Write to do" autocomplete="off">
+                </form>
+                <ul id="todo-list">
+
+                </ul>
+            </div>
+            <div id="user-wrapper" class="drag">
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
+            <div id="weather" class="drag">
+                <p>Weather</p>
+                <span class="cloud"></span>
+                <span class="location"></span>
+                <span class="temperture"></span>
+            </div>
+            <div id="clock-wrapper" class="drag">
+                <h2 id="clock"></h2>
+            </div>
+            <div id="answers-btn" class="drag">
+                <span>나의 기록</span>
+            </div>  
+            <div id="answers-collection">
+                <div class="close-btn-wrapper">
+                    <div class="close-btn">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="answers-wrapper">
+
+                </div>
+            </div>                              
+            <div id="quote">
+                <p><span></span></p>
+                <p><span></span></p>
+            </div>
+        </div>
+    </main>
+    <script src="js/login.js"></script>
+    <script src="js/weather.js"></script>
+    <script type="module" src="js/question.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <!-- <script src="js/background.js"></script> -->
+    <script src="js/todo.js"></script>
+    <script src="js/drag-drop.js"></script>
+    <script type="module" src="js/answers.js"></script>
+</body>
+
+</html>

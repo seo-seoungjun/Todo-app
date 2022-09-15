@@ -1,0 +1,30 @@
+
+#todo-wrapper{
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(58, 40, 40, 0.5);
+    padding: 20px;
+}
+
+#todo-wrapper #todo-form{
+    margin-bottom: 10px;
+}
+
+#todo-wrapper #todo-form input{
+    font-size: 16px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(58, 40, 40, 0.5);
+}
+
+#todo-wrapper #todo-form input::placeholder{
+    font-size: 20px;
+}
+
+#todo-wrapper #todo-list li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}

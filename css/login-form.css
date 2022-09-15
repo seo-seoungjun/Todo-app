@@ -1,0 +1,32 @@
+#login-form-wrapper{
+    position: relative;
+    top: 45%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+#login-form {
+    width: 20%;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(58, 40, 40, 0.5);
+}
+
+#login-form input:nth-child(1) {
+    width: 85%;
+    text-align: center;
+}
+
+#login-form input:nth-child(2) {
+    padding: 2px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-radius: inherit;
+}

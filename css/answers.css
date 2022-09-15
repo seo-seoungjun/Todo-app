@@ -1,0 +1,138 @@
+#answers-btn{
+    display:inline-block;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(58, 40, 40, 0.5);
+    padding: 20px;
+    color: rgba(58, 40, 40, 0.85);
+}
+
+#answers-btn span{
+    cursor: pointer;
+}
+
+#answers-wrapper::-webkit-scrollbar {
+    width: 7px; /*스크롤바의 너비*/
+
+}
+
+#answers-wrapper::-webkit-scrollbar-thumb {
+    background-color: grey; /*스크롤바의 색상*/
+    border-radius: 50px;
+
+}
+
+#answers-wrapper::-webkit-scrollbar-track {
+    background-color: none; /*스크롤바 트랙 색상*/
+    
+}
+
+#answers-collection{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(58, 40, 40, 0.5);
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1.5s, transform 1s;
+    font-family: 'Gamja Flower', cursive;
+
+}
+
+#answers-collection.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+#answers-collection .close-btn-wrapper {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#answers-collection .close-btn-wrapper .close-btn {
+    cursor: pointer;
+    position: relative;
+    left: calc(100% - 45px);
+    width: 23px;
+    height: 23px;
+}
+
+#answers-collection .close-btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 3px;
+    height: 23px;
+    border-radius: 15px;
+    background-color: #11111b;
+}
+
+#answers-collection .close-btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 3px;
+    height: 23px;
+    border-radius: 15px;
+    background-color: #11111b;
+}
+
+
+
+#answers-wrapper{   
+    height: 88%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 0px 0px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+#answers-wrapper div::-webkit-scrollbar {
+    display: none; /*스크롤바의 너비*/
+
+}
+
+#answers-wrapper div::-webkit-scrollbar-thumb {
+    display: none;
+
+}
+
+#answers-wrapper div::-webkit-scrollbar-track {
+    display: none;
+}
+
+
+#answers-wrapper div{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 180px;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(58, 40, 40, 0.5);
+    padding: 20px;
+    overflow: hidden;
+    word-break:break-all;
+    /* overflow-y: scroll; */
+}
+
+#answers-wrapper div #question{
+    font-size: 16px;
+}
+
+#answers-wrapper div #answer{
+    margin-top: 15px;
+}
+
+#answers-wrapper div #day{
+    margin-top: 10px;
+}
