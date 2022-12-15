@@ -1,0 +1,51 @@
+#question-form-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px rgba(58, 40, 40, 0.5);
+  padding: 20px;
+  color: rgba(58, 40, 40, 0.85);
+}
+
+#question-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#question-form label {
+  margin-bottom: 15px;
+}
+
+#question-form textarea {
+  text-align: center;
+  resize: none;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(58, 40, 40, 0.5);
+}
+
+#check-submit {
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#check-submit button {
+  all: unset;
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 6px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 0.5px solid rgba(58, 40, 40, 0.5);
+}
+
+#check-submit button:active {
+  transform: scale(0.95);
+}

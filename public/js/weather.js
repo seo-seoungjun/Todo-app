@@ -1,28 +1,25 @@
 function onGeoSuccess(position) {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
-    const API_KEY = "138c7e7c2fbaad791af4bec11dc9b07d";
-    const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+  const API_KEY = '138c7e7c2fbaad791af4bec11dc9b07d';
+  const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 
-    fetch(weatherApiUrl)
-        .then((response)=>response.json())
-        .then((data) =>{
-            const weather = document.querySelector('.cloud');
-            const city = document.querySelector('.location');
-            const temp = document.querySelector('.temperture');
+  fetch(weatherApiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      const weather = document.querySelector('.cloud');
+      const city = document.querySelector('.location');
+      const temp = document.querySelector('.temperture');
 
-            weather.innerText = data.weather[0].main;
-            city.innerText = data.name;
-            temp.innerText = `${data.main.temp} ℃`;
+      weather.innerText = data.weather[0].main;
+      city.innerText = data.name;
+      temp.innerText = `${data.main.temp} ℃`;
     });
-};
+}
 
-function onGeoFail(){
-
-};
+function onGeoFail() {}
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoFail);
-
 
 // {
 //     "coord": {
