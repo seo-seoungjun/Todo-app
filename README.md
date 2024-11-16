@@ -21,6 +21,10 @@
 - cookie를 이용하여 하루에 한번씩 랜덤한 질문 생성
 - 답변은 나의 기록 탭에 저장
 
+
+https://github.com/user-attachments/assets/3b326cf8-0096-4af4-9845-7e268926763f
+
+
 <img width="194" alt="스크린샷 2024-11-14 오전 12 13 40" src="https://github.com/user-attachments/assets/ea8521d7-335f-43f5-aa12-d377500b4ff8">
 
 <img width="952" alt="스크린샷 2024-11-14 오전 12 21 23" src="https://github.com/user-attachments/assets/1383b7fe-5132-4d1a-9e4f-882a148643ef">
